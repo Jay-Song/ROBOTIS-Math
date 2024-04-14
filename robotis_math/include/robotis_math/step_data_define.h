@@ -54,7 +54,7 @@ typedef struct
 typedef struct
 {
   int    walking_state;
-  double abs_step_time, dsp_ratio;
+  double abs_step_time, step_duration, dsp_ratio; // abs_step_time: accumulated time, step_time: actual step duration
   double start_time_delay_ratio_x,    start_time_delay_ratio_y,     start_time_delay_ratio_z;
   double start_time_delay_ratio_roll, start_time_delay_ratio_pitch, start_time_delay_ratio_yaw;
   double finish_time_advance_ratio_x,    finish_time_advance_ratio_y,     finish_time_advance_ratio_z;

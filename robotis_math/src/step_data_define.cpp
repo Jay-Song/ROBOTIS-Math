@@ -63,7 +63,7 @@ std::ostream& operator<<(std::ostream& out, const StepPositionData& position_dat
 std::ostream& operator<<(std::ostream& out, const StepTimeData& time_data)
 {
   out <<  std::fixed << std::setprecision(3);
-  out << "[PARAMS] " << "walking_state: " << dispatchWalkingState(time_data.walking_state) << " | abs_step_time: " << time_data.abs_step_time << " | dsp_ratio: " << time_data.dsp_ratio << "\n";
+  out << "[PARAMS] " << "walking_state: " << dispatchWalkingState(time_data.walking_state) << " | abs_step_time: " << time_data.abs_step_time << " | step_duration: " << time_data.step_duration << " | dsp_ratio: " << time_data.dsp_ratio << "\n";
   out << "[ START] " << time_data.start_time_delay_ratio_x << "/" << time_data.start_time_delay_ratio_y << "/" << time_data.start_time_delay_ratio_z << "|"
       << time_data.start_time_delay_ratio_roll << "/" << time_data.start_time_delay_ratio_pitch << "/" << time_data.start_time_delay_ratio_yaw << "\n";
   out << "[FINISH] " << time_data.finish_time_advance_ratio_x << "/" << time_data.finish_time_advance_ratio_y << "/" << time_data.finish_time_advance_ratio_z << "|"
